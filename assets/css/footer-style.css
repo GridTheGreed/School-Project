@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 0; /* Adjust as needed */
+}
+
+footer {
+    background-color: #172239;
+    
+}
+
+.logo-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+}
+
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #172239;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* footer contents */
+
+.footer-content1 {
+    
+    margin-left: 20px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.footer-content2 {
+    flex: 1;
+    margin: auto 20px;
+}
+
+.footer-content3 {
+    flex: 1;
+    margin: auto 20px;
+    
+}
+
+/* about us placeholder */
+.footer-content3 .social-icons {
+    visibility: hidden;
+}
+
+h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 7px;
+    /*  */
+         
+}
+
+h3:hover {
+    color: #f18930;
+}
+
+/* without media query */
+.footer-content1 .paragraph-1 {
+    margin: 20px 0;
+    font-size: 12px;
+    padding-right: 20px;
+    
+}
+
+/* hide the other <p> element under .footer-content1 class */
+.footer-content1 .media-paragraph-1 {
+    display: none;
+}
+
+.footer-content2 ul {
+    text-align: center;
+    padding: 0;
+}
+
+.footer-content2 h3 {
+    margin: auto;
+    width: max-content;   
+    
+}
+
+.footer-content3 h3 {
+    margin: auto;
+    width: max-content;   
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 5px 5px 0 5px;
+}
+
+.social-icons i {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.social-icons i:hover {
+    color: #f18930;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f18930;
+}
+
+.bottom-bar {
+    background: #f18930;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.bottom-bar p {
+    color: #343434;
+    margin: 0;
+    font-size: 70%;
+    padding: 2px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content1, .footer-content2, .footer-content3 {
+        margin: 10px 0;
+    }
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+   
+
+    .footer-content1 .media-paragraph-1 {
+        display: block;
+        margin: auto;
+        padding: 0 30px;
+        font-size: 12px;
+        text-align: center;
+
+    }
+    .footer-content1 .paragraph-1 {
+        display: none;
+    }
+
+    .footer-content3 .social-icons {
+        display: none;
+    }
+
+    .logo-circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bottom-bar p {
+        color: #343434;
+        margin: 0;
+        font-size: 60%;
+        padding: 5px;
+    }
+
+}
+
+/* other media query */
+@media only screen and (max-width: 1056px ) and (min-width: 769px)  {  
+ 
+    h3 {
+        font-size: 12px;
+        
+    }
+
+    .logo-container {
+        
+        gap: 10px;
+    }
+
+    .logo-circle {
+        width: 70px;
+        height: 30px;
+    }
+
+    .social-icons i {
+        color: #ffffff;
+        font-size: 15px;
+    }
+
+    .footer-content1 .media-paragraph-1 {
+        display: block;
+        margin: 20px 0;
+        font-size: 11px;
+        padding-right: 20px;
+
+    }
+    .footer-content1 .paragraph-1 {
+        display: none;
+    }
+
+    .bottom-bar {
+        padding: 0;
+    }
+    
+    .bottom-bar p {
+        color: #343434;
+        margin: 0;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+}
