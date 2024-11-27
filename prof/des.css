@@ -1,0 +1,129 @@
+body{
+    align-items: center;
+    background-image: url(landscapebg.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    margin-left: 8px;
+}
+/* Back button*/
+button{
+    font-size: clamp(0.8125rem, 0.5982rem + 1.0714vw, 1.5625rem);
+    border: 1px solid #ffffff;
+    color: #000000;
+    backdrop-filter: blur(100%);
+    background: transparent;
+    background-color: rgb(255, 255, 255);
+    margin-right: 8px;
+    max-width: 300px;
+    min-width: 25px;
+    padding: 1px;
+    margin-top: -50px;
+}
+/* Search bar*/
+#searchInput{
+    float: right ;
+    margin-right: 8px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    max-width: 300px;
+    min-width: 25px;
+    border: 1px solid #ffffff;
+    backdrop-filter: blur(100%);
+    background: transparent;
+    background-color: #ffffff;
+}
+::placeholder{
+    color: #000000;
+}
+
+.tables_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+
+}
+.tables_container h1{
+    color: #ffffff;
+    font-size: clamp(0.9375rem, 0.4911rem + 2.2321vw, 2.5rem);
+}
+.data_Table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+    align-self: center;
+}
+.data_Table th {
+    background: transparent;
+    width: 100%;
+    background-color: #FC3;
+    backdrop-filter: blur(100%);
+    border: 1px solid #000000;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    font-size: clamp(0.5rem, 0.2321rem + 1.3393vw, 1.4375rem);
+}
+/* Styling for table cells */
+.data_Table td {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    border: 1px solid #ffffff;
+    padding: 3px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(100%);
+    font-size: clamp(0.625rem, 0.3214rem + 1.5179vw, 1.6875rem);
+}
+input{
+    font-size: clamp(0.8125rem, 0.5982rem + 1.0714vw, 1.5625rem);
+    color: #000000;
+    width: 100%;
+}
+
+/* Styling for table cells */
+p{
+    margin: 1px;
+}
+.data_Table h1{
+    width: 100%;
+    text-align: left;
+}
+.center_text h1{
+    color: #ffffff;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(1rem, 0.4286rem + 2.8571vw, 3rem);
+}
+.center_text h2 {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(0.8125rem, 0.3304rem + 2.4107vw, 2.5rem);
+}
+
+/* nakakainis na responsive*/
+@media screen and (max-width: 426px) { 
+    .center_text{
+        margin-left: 1px;
+    }
+
+    .tables_container{
+        max-width: 100%;
+        min-width: auto;
+    }
+    .data_Table{
+        margin-right: 1px;
+    }
+    body{
+        background-image: url(portbg.png);
+        background-size: 100%;
+    }
+    #searchInput{
+        margin: 0;
+        width: 50%;
+    }
+}
