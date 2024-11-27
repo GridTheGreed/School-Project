@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stay organized with our user-friendly Calendar featuring events, reminders, and a customizable interface. Built with HTML, CSS, and JavaScript. Start scheduling today!"
+    />
+    <meta
+      name="keywords"
+      content="calendar, events, reminders, javascript, html, css, open source coding"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="cal/callendarStyle.css" />
+    <!-- LINK NG CSS -->
+    <link rel="stylesheet" href="nav/css/reset.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="nav/css/style.css" />
+    <title>Calendar with Events</title>
+
+
+    <header style="--clr:rgba(22,34,57,0.95)" class="header">
+      <a href="#" class="logo"><img src="assets\images\logo1.png"  style="width: auto; height: 64px;"></a>
+      <nav class="navbar">
+      <a style="--clr:#FFD700" href="index.html" data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
+      <a style="--clr:#FFD700" href="https://admission.psu.edu.ph"  target="_blank" data-text="&nbsp;ADMISSION">&nbsp;ADMISSION&nbsp;</a>
+      <a style="--clr:#FFD700" href="C1.html" data-text="&nbsp;FACULTY">&nbsp;FACULTY&nbsp;</a>
+      <a style="--clr:#FFD700" href="Callendar.html" data-text="&nbsp;CALENDAR">&nbsp;CALENDAR&nbsp;</a>
+      <a style="--clr:#FFD700" href="GOW.html" data-text="&nbsp;CURRICULUM">&nbsp;CURRICULUM&nbsp;</a>
+      <a style="--clr:#FFD700" href="off.html" data-text="&nbsp;OFFICERS">&nbsp;OFFICERS&nbsp;</a>
+
+      </nav>
+  
+      <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+
+
+
+  </head>
+  <body>
+  <section>
+    <div class="container">
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">december 2015</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days"></div>
+          <div class="goto-today">
+            <div class="goto" style="display: none;">
+              <input type="text" placeholder="mm/yyyy" class="date-input" />
+              <button class="goto-btn">Go</button>
+            </div>
+            
+            <button class="add-bulk-events">Import All Events</button>
+            <button class="today-btn">Today</button>
+            <button class="delete-all-events">Delete All Event</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day">wed</div>
+          <div class="event-date">12th december 2022</div>
+        </div>
+        <div class="events"></div>
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Add Event</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Event Name" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time From"
+                class="event-time-from"
+              />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time To"
+                class="event-time-to"
+              />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">Add Event</button>
+          </div>
+        </div>
+      </div>
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+    <!-- THIS SHIT DOES NOT WORK WHEN THE PAKING INPUT AND BUTTON ON THE GOTO DIV IS NOT PAKING PRESENT I DONT KNOW PAKING WHY -->
+    <!-- <button class="add-bulk-events">Add Bulk Events</button>
+    <button class="delete-all-events">Delete All Events</button> -->
+
+  </section>
+    <script src="cal/CallendarScript.js"></script>
+    <!-- COPY SA DULO  -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script src="js/script.js"></script>
+  </body>
+</html>
